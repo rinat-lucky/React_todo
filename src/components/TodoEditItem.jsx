@@ -17,6 +17,7 @@ function TodoEditItem({title, closeEdit, saveEdit}) {
         type="text"
         value={value}
         onChange={evt => {setValue(evt.target.value)}}
+        autoFocus={true}
       />
       <ButtonSucces type="submit" children={<CheckWhite />} />
       <ButtonDanger type="button" onClick={() => {closeEdit()}} children={<CloseWhite />} />
